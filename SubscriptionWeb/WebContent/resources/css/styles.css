@@ -1,0 +1,163 @@
+
+
+@CHARSET "UTF-8";
+
+.ui-widget,.ui-widget .ui-widget {
+        font-size: 90% !important;
+}
+hr {
+        border: 1px solid;
+        border-color: #d3d3d3;
+}
+
+.header {
+		width: 100%;
+		float: left;
+		height: 55px;
+        margin: -8px -8px -8px;
+        padding: 5px;
+        background-image: url('top_grad.jpg');
+        background-repeat: repeat-x;
+        padding: 5px;
+}
+
+.header-menu {
+        table-layout: fixed;
+        width: 600px;
+        margin: 0 auto;
+        font-size: 25px;
+        cellpadding: 10px;
+        text-decoration: none;
+}
+
+.content {
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border: 2px solid;
+        border-radius: 5px;
+        border-color: #d3d3d3;
+}
+
+.content-rent-car {
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 35%;
+        border: 2px solid;
+        border-radius: 5px;
+        border-color: #d3d3d3;
+}
+
+.content-buy-car {
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border: 2px solid;
+        border-radius: 5px;
+        border-color: #d3d3d3;
+}
+
+.content-autopark {
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border: 2px solid;
+        border-radius: 5px;
+        border-color: #d3d3d3;
+}
+
+.content-contacts {
+        padding: 10px;
+        margin-left : auto;
+        margin-right: auto;
+        width: 50%;
+        border: 2px solid;
+        border-radius: 5px;
+        border-color: #d3d3d3;
+        margin-left: auto;
+}
+
+.content-contacts {
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border: 2px solid;
+        border-radius: 5px;
+        border-color: #d3d3d3;
+}
+
+.content-contacts-gmap {
+        text-align: center;
+}
+
+.content-login {
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        border: 2px solid;
+        border-radius: 5px;
+        border-color: #d3d3d3;
+}
+
+.content-center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+}
+
+.header-menu a:link {
+        color: white;
+        text-decoration: none;
+}
+
+.header-menu a:hover {
+        color: red;
+        text-decoration: none;
+        font-weight: bold;
+}
+
+.header-menu a:visited {
+        color: white;
+        text-decoration: none
+}
+
+.header-localization {
+        text-align: right;
+        margin: 0 auto;
+}
+
+.content {
+        margin: 0 auto;
+        border: 0px solid;
+        border-radius: 10px;
+}
+
+.main-table {
+        margin: 0 auto;
+        border-collapse: collapse;
+}
+
+.main-table-header {
+        text-align: center;
+        background: none repeat scroll 0 0 #E5E5E5;
+        border-bottom: 1px solid #BBBBBB;
+        padding: 16px;
+}
+
+.main-table-odd-row {
+        text-align: left;
+        background: none repeat scroll 0 0 #FFFFFFF;
+        border-top: 1px solid #BBBBBB;
+}
+
+.main-table-even-row {
+        text-align: left;
+        background: none repeat scroll 0 0 #F9F9F9;
+        border-top: 1px solid #BBBBBB;
+}
