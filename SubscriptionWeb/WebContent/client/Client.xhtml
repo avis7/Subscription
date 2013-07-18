@@ -6,15 +6,9 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:ui="http://java.sun.com/jsf/facelets"	>
 <h:body>
-	<ui:composition template="../Template.xhtml">
-	<ui:define name="header">
-			<ui:include src="header.xhtml"/>
-		</ui:define>
-		<ui:define name="menu">
-			<ui:include src="menu.xhtml"/>
-		</ui:define>
-		<ui:define name="content">
-			<h:form>
+	<ui:composition template="../Template.xhtml">		
+	<ui:define name="content">
+				<h:form>
 			<h:dataTable id="stringTable" value="#{user.editions}" var="item"
 				border="1">
 				<h:column>

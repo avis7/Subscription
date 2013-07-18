@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="Template.xhtml">
+	<ui:define name="menu">
+		<ui:include src="client/menu.xhtml" />
+	</ui:define>
+	<ui:define name="content">
+		<h:form>
+			<h4>Registration Form</h4>
+			<table>
+				<tr>
+					<td>First Name:</td>
+					<td><h:outputText value="#{registrationBean.firstName}" /></td>
+				</tr>
+				<tr>
+					<td>Last Name:</td>
+					<td><h:outputText label="Last Name" id="lname"
+							value="#{registrationBean.lastName}" required="true" /> <p:message
+							for="lname" /></td>
+				</tr>
+				<tr>
+					<td>Sex:</td>
+					<td><h:outputText value="#{registrationBean.sex}" /></td>
+				</tr>
+				<tr>
+					<td>Date of Birth:</td>
+					<td><h:outputText value="#{registrationBean.dob}" /></td>
+				</tr>
+				<tr>
+					<td>Email Address:</td>
+					<td><h:outputText value="#{registrationBean.email}" /></td>
+				</tr>
+			</table>
+			<p>
+				<p:messages />
+			</p>
+			<p>
+				<h:commandButton value="Edit" action="registration" />
+				<h:commandButton value="Confirm"
+					action="#{registrationBean.addConfirmedUser}" />
+			</p>
+		</h:form>
+	</ui:define>
+</ui:composition>
+</html>

@@ -8,22 +8,23 @@
 <h:head>
 	<title>Final Project</title>
 	<h:outputStylesheet library="css" name="styles.css" />
+	<h:outputStylesheet library="css" name="dropdown.css" />
 	
 </h:head>
 	<h:body>
-		<div id="header" class="header">
+		<div id="header" >
 			<ui:insert name="header">
 				<ui:include src="header.xhtml" />
 			</ui:insert>
 		</div>
-		<div id="add_header">
-			<br />
-		</div>
 		<div id="menu">
-			<ui:insert name="menu" />
+			<ui:insert name="menu" >
+			<ui:include src="menu.xhtml" />
+			</ui:insert>
 		</div>
 		<hr />
-		<div id="content">
+		<div class="spacer"/>
+		<div id="middle">
 			<ui:insert name="content"/>
 		</div>
 		<hr />

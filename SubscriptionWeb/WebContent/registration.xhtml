@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="Template.xhtml">
+	<ui:define name="content">
+		<h:form>
+			<h4>Registration Form</h4>
+			<table>
+				<tr>
+					<td>First Name:</td>
+					<td><p:inputText label="First Name" id="fname"
+							value="#{registrationBean.firstName}" required="true" /> <h:message
+							for="fname" /></td>
+				</tr>
+				<tr>
+					<td>Last Name:</td>
+					<td><p:inputText label="Last Name" id="lname"
+							value="#{registrationBean.lastName}" required="true" /> <h:message
+							for="lname" /></td>
+				</tr>
+				<tr>
+					<td>Sex:</td>
+					<td><p:selectOneRadio columns="2" label="Sex" id="sex"
+							value="#{registrationBean.sex}" required="true">
+							<f:selectItem itemLabel="Male" itemValue="male" />
+							<f:selectItem itemLabel="Female" itemValue="female" />
+						</p:selectOneRadio> <h:message for="sex" /></td>
+				</tr>
+				<tr>
+					<td>Date of Birth:</td>
+					<td><p:calendar abel="Date of Birth" id="dob"
+							value="#{registrationBean.dob}" required="true">
+							<f:convertDateTime pattern="dd.MM.yy" />
+						</p:calendar> (dd.mm.yy) <h:message for="dob" /></td>
+				</tr>
+				<tr>
+					<td>Email Address:</td>
+					<td><p:inputText label="Email Address" id="email"
+							value="#{registrationBean.email}" required="true"
+							validator="#{registrationBean.validateEmail}" /> <h:message
+							for="email" /></td>
+				</tr>
+			</table>
+			<p>
+				<h:messages />
+			</p>
+			<p>
+				<p:commandButton value="Register" action="confirm"  ajax="false"/>
+			</p>
+		</h:form>
+	</ui:define>
+</ui:composition>
+</html>

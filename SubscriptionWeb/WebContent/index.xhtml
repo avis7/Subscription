@@ -4,11 +4,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:ui="http://java.sun.com/jsf/facelets">
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
 <h:body>
 	<ui:composition template="Template.xhtml">
 		<ui:define name="content">
-			<ui:include src="list.xhtml"/>
+			<div class="homepage">
+				<h3>Images</h3>
+				<p:galleria effectSpeed="5" value="#{galleriaBean.images}" var="image"
+					panelWidth="500" panelHeight="313" showCaption="true">
+					<p:graphicImage value="/img/galleria/#{image}"
+						alt="Image Description for #{image}" title="#{image}" />
+				</p:galleria>
+			</div>
 		</ui:define>
 	</ui:composition>
 </h:body>
